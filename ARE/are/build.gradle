@@ -5,26 +5,14 @@ apply plugin: 'com.github.dcendents.android-maven'
 //我的github账号是helen-x, 对应我的group就是com.github.helen-x
 group='com.github.dazeGitHub'
 
-ext {
-    PUBLISH_GROUP_ID = 'com.github.chinalwb'
-    PUBLISH_ARTIFACT_ID = 'are'
-    PUBLISH_VERSION = '0.1.9'
-}
-
-tasks.withType(Javadoc) {
-    options.addStringOption('Xdoclint:none', '-quiet')
-    options.addStringOption('encoding', 'UTF-8')
-    options.addStringOption('charSet', 'UTF-8')
-}
-
 android {
     compileSdkVersion 28
 
     defaultConfig {
         minSdkVersion 17
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
     }
 
     buildTypes {
